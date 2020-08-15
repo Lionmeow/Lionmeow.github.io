@@ -3,18 +3,75 @@
 
 <head>
 	<title>How to the water???</title>
+	
+	<style>
+	#textguide {
+		display: none;
+	}
+	#videoguide {
+		display: none;
+	}
+</style>
 </head>
 
 <body>
-<h1>how to water</h1></br>
-step 1: get water</br>
-step 2: don't pierce hole in your esophagus (this might make you drown)</br>
-step 3: pour water into mouth, but not all at once (this might make you drown)</br>
-step 4: hope you don't drown</br>
-
-</p>
-<button onclick="getElementById('demo').innerHTML = "Water is an inorganic, transparent, tasteless, odorless, and nearly colorless chemical substance, which is the main constituent of Earth's hydrosphere and the fluids of all known living organisms."">Definition of Water</button>
-<p id="definition"></p>
-
+	
+	<button onclick="showHideTG()">text guide</button>
+	<button onclick="showHideVG()">video guide</button>
+	
+	<div id="textguide">
+		<h3>how drink the water (text guide)</h3></br>
+		<b>step 1): </b>grab cup of water. do not upside down the cup.</br>
+		<b>step 2): </b>make sure that the liquid you're pouring is water. not acid. not molten metal. not lava.</br>
+		<b>step 3): </b>pour the liquid. not on the table. not into your mouth. into the cup.</br>
+		<b>step 4): </b>do not penetrate any part of your esophagus. this may cause drowning.</br>
+		<b>step 5): </b>drink the drink. do not do it all at once. this might cause drowning.</br>
+		
+		</p><h2>now hope that you do not drown.</h2>
+	</div>
+	
+	<div id="videoguide">
+		<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" height="200" width="300" title="video guide"></iframe>
+	</div>
+	
+	<script>
+		function showHideTG(){
+			var x = document.getElementById("textguide");
+			var y = document.getElementById("videoguide");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+				y.style.display = "none";
+			} else {
+				x.style.display = "none";
+			}
+		}
+		function showHideVG(){
+			var x = document.getElementById("videoguide");
+			var y = document.getElementById("textguide");
+			if (x.style.display === "none") {
+				x.style.display = "block";
+				y.style.display = "none";
+			} else {
+				x.style.display = "none";
+			}
+		}
+		function showHidea(){
+			var y = document.getElementById("textguide");
+			if (y.style.display === "none") {
+				y.style.display = "block";
+			} else {
+				y.style.display = "none";
+			}
+		}
+		function showHideb(){
+			var y = document.getElementById("textguide");
+			if (y.style.display === "none") {
+				y.style.display = "block";
+			} else {
+				y.style.display = "none";
+			}
+		}
+	</script>
+	
 </body>
 </html>
