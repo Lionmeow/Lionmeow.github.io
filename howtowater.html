@@ -5,16 +5,28 @@
 	<title>How to the water???</title>
 	
 	<style>
+	#body {
+	
+	}
 	#textguide {
 		display: none;
 	}
 	#videoguide {
 		display: none;
 	}
+	#titleimage {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 30%;
+		height: 30%;
+	}
 </style>
 </head>
 
-<body>
+<body style="background-color:lightblue;">
+	
+	<img src="images/title.png" alt="title" id="titleimage">
 	
 	<button onclick="showHideTG()">text guide</button>
 	<button onclick="showHideVG()">video guide</button>
@@ -38,22 +50,14 @@
 		function showHideTG(){
 			var x = document.getElementById("textguide");
 			var y = document.getElementById("videoguide");
-			if (x.style.display === "none") {
-				x.style.display = "block";
-				y.style.display = "none";
-			} else {
-				x.style.display = "none";
-			}
+			x.style.display = "block";
+			y.style.display = "none";
 		}
 		function showHideVG(){
 			var x = document.getElementById("videoguide");
 			var y = document.getElementById("textguide");
-			if (x.style.display === "none") {
-				x.style.display = "block";
-				y.style.display = "none";
-			} else {
-				x.style.display = "none";
-			}
+			x.style.display = "block";
+			y.style.display = "none";
 		}
 		function showHidea(){
 			var y = document.getElementById("textguide");
